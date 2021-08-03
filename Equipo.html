@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es el sitio web de un estudio jurídico ubicado en la ciudad de La Plata y que cuenta con más de 10 años de experiencia">
+    <meta name="keywords"  content="Estudio Jurídico, Juicios, Laboral, Divorcios, Accidentes">
+    <title>Equipo</title>
+    <!--<style>
+        #fotoMartillo /* Se especifica el tamaño de la imagen del martillo */
+        {
+            height: 180px;
+            width: 350px; 
+            
+        }
+        
+    </style>-->
+  <!--Link para importar fuente de Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+  <!--Link para importar archivo de estilo .css-->
+  <link rel="stylesheet" href="style.css">
+  <!--Links para incorporar Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <!--<img src="images/justiceLogo.jpg" alt="Logo de justicia" align="right" id="fotoMartillo">-->
+        <h1>Estudio Jurídico</h1> <!--Titulo principal de la página-->
+        <nav class="nav">
+            <div class="btn-group"> 
+                <button type="button" class="btn btn-primary"><a href="index.html" target="_self">Inicio</a></button>
+                <button type="button" class="btn btn-primary"><a href="QuienesSomos.html" target="_self">¿Quiénes somos?</a></button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary"><a href="Servicios.html" target="_self">Servicios</a></button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Desplegar menú</span>
+                    </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" target="_self">Sucesiones</a>
+                    <a class="dropdown-item" href="#" target="_self">Accidentes</a>
+                    <a class="dropdown-item" href="#" target="_self">Derecho Laboral</a>
+                    <a class="dropdown-item" href="#" target="_self">Derecho de Familia</a>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary"><a href="Equipo.html" target="_self">Equipo</a></button>
+                <button type="button" class="btn btn-primary"><a href="Contacto.html" target="_self">Contacto</a></button>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor-1 para">
+            <a href="Equipo" id=Equipo></a>
+            <h2 class="contenedor-1__subtitulos">Equipo</h2>
+
+            <div class="contenedor-2 para"> <!--Nuevo bloque donde se aplica BEM-->
+            <br>
+            <br>
+            <div  class = "contenedor-2__abogado"> <!--Primer item-->
+                <img class= "contenedor-2__abogado__foto " src="images/lawyer1.jpg" alt="Foto de abogado 1" > <p>Breve
+                    biografía del abogado 1 </p>
+            </div>
+            <br>
+            <div class ="contenedor-2__abogado"> <!--Segundo item-->
+               <img class= "contenedor-2__abogado__foto" src="images/lawyer2.jpg" alt="Foto de abogado 2" > <p>Breve
+                    biografía del abogado 2</p>
+            </div>
+            
+            <br>
+            </div>
+            <br>
+        </section>
+        <br>
+        <a href="index.html" id="volverAlInicio">Volver al Inicio</a>
+    </main>
+    <footer>
+        <h3>Made by Aye</h3>
+        <div class="btn--ciudad">Ciudad de La Plata, Provincia de Bs. As</div>
+        <div class="btn--direccion">Dirección: Soho, El Salvador 5218, CP 1414, Buenos Aires</div>
+        <div class="btn--telefono">Telefono: 2211234567</div>
+        <!--Se agrega un mapa para indicar la dirección-->
+        <iframe id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715524370883!2d-58.434461282556114!3d-34.586064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoder%20House!5e0!3m2!1ses-419!2sar!4v1624508901218!5m2!1ses-419!2sar"
+            width="800" height="500" style="border:0;" allowfullscreen="true"
+            loading="lazy"></iframe>
+        <p class="dato">Formas de Contacto --></p>
+        <!--Se agregan los iconos de las redes sociales disponibles para contactarse-->
+        <a target="_blank" href="https://www.facebook.com/"><img
+                src="images/logoFacebook.jpg" alt="Logo de facebook" width="60"
+                height="40" align="right"></a>
+        <a target="_blank" href="https://outlook.live.com/owa/"><img
+                src="images/logoEmail.jpg" alt="Logo de email" width="50" height="40"
+                align="right"></a>
+        <a target="_blank" href="https://ar.linkedin.com/"><img
+                src="images/logoLinkedin.png" alt="Logo de linkedin" width="60"
+                height="40" align="right"></a>
+    </footer>
+</body>
+</html>

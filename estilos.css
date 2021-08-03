@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/** {
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0x;
+  margin-right: 0px;
+  padding: 1px;
+}*/
+/* Declaración de variables globales */
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(70, 243, 177, 0.959)), to(#15b69b));
+  background-image: linear-gradient(to bottom, rgba(70, 243, 177, 0.959), #15b69b);
+}
+
+main {
+  background-color: darkturquoise;
+  /* Agrega un color de fondo en toda la página web */
+  font-family: 'Nunito';
+  /* Fuente elegida de google font */
+  line-height: 14px;
+  /* Cambia a 14 px la separación entre líneas  */
+  font-size: 15px;
+  /* Se especifica el tamaño de la fuente */
+}
+
+main p {
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+  word-spacing: 5px;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(70, 243, 177, 0.959)), to(#15b69b));
+  background-image: linear-gradient(to bottom, rgba(70, 243, 177, 0.959), #15b69b);
+}
+
+/* -----------------Estilos para mi menú navegable - Inicio ------------------*/
+a:link {
+  color: blue;
+  /* Color para enlaces no visitados */
+}
+
+a:visited {
+  color: purple;
+  /* Color para enlaces visitados */
+}
+
+a:hover {
+  background: yellow;
+  /* Color para cuando el usuario esta sobre el enlace */
+}
+
+a:active {
+  color: lime;
+  /* Color para enlaces activos */
+}
+
+/*---------------------- Estilos para mi menú navegable - Fin ----------------------*/
+.header__ImgEstudio {
+  height: 500px;
+  width: 80%;
+  float: none;
+  background-image: url(images/justice_comprimida.jpg);
+  position: center;
+  background-position: center;
+  background-size: cover;
+  /*text-align: center;*/
+}
+
+h1 {
+  color: #026802;
+  /* Cambia el título principal (h1) a color verde */
+  font-size: 30px;
+  /* Cambia el tamaño de la fuente */
+  font-weight: bold;
+  /* Cambiar el grosor de la fuente, en este caso, se muestra la letra en negrita */
+  letter-spacing: 2px;
+  /* Modifica el espaciado entre letras */
+  text-transform: uppercase;
+  /* Cambia el título a letras mayúsculas */
+  text-decoration: underline;
+  /* Subraya el título */
+  text-shadow: 5px 5px 5px #3030eb;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  /*Se agrega animación al título principal */
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  /* animation-direction: alternate;*/
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* animation-timing-function: ease-in;*/
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contenedor-1__subtitulos {
+  color: green;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/*.contenedor-1__subtitulos--uppercase /*Aplicando un modificador al elemento del bloque con BEM */
+/*{
+  text-transform: uppercase;
+  color:rgb(82, 209, 82);
+}*/
+.contenedor-1--p {
+  color: blue;
+}
+
+.contenedor-2 {
+  height: 300px;
+  width: 80%;
+  background-color: lightseagreen;
+  /*Se incluye el mixin pasándole parámetros */
+  /*background-color: lightskyblue;*/
+  /*width: 100%;*/
+  /*height: 300px;*/
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  color: #fff;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.contenedor-2__abogado {
+  /*background-color: rgb(197, 176, 230);*/
+  background-size: cover;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.contenedor-2__abogado__foto {
+  height: 250px;
+  width: 300px;
+}
+
+.contenedor-2__abogado:hover {
+  /*transform: translateY(-6px);*/
+  -webkit-animation: 1.5s movercaja infinite;
+          animation: 1.5s movercaja infinite;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.listaDeServicios {
+  list-style-type: circle;
+  /* Cambia la forma de las viñetas de la lista, ahora son circulares */
+  list-style-position: inside;
+  /*Cambia la posición de las viñetas */
+}
+
+.tabla {
+  border: 5px double;
+  border-color: blue;
+}
+
+.tabla__tr {
+  /*color: blue; /* Modifica con color azul a todo el texto comprendido en la tabla */
+  background-color: aqua;
+  /* Color de fondo de la tabla */
+  border: 1px solid;
+  /* Grosor y tipo de borde para toda la tabla */
+  /*font-weight: bold;*/
+}
+
+.tabla__tr--th {
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tabla__tr--td {
+  color: blueviolet;
+  /* Cambia el color de la lista desordenada */
+  font-weight: italic;
+  list-style-type: circle;
+  /* Cambia la forma de las viñetas de la lista, ahora son circulares */
+  list-style-position: inside;
+  /*Cambia la posición de las viñetas */
+}
+
+.Form {
+  color: blue;
+  /* Modifica color de las letras del formulario */
+  background-image: url(images/imageContactoBackground.jpg);
+  /* Imagen de fondo para el formulario */
+  background-size: 100% 100%;
+  /* Se ajusta tamaño del fondo del formulario */
+  font-weight: bold;
+  /* Cambia la letra de la fuente a negrita */
+}
+
+#volverAlInicio {
+  text-align: center !important;
+  /* Cambia la alineación del link para volver al inicio */
+  display: block;
+}
+
+h3 {
+  color: #4e4ef5;
+}
+
+.dato {
+  text-align: center;
+  /* Cambia la alineación del texto de los datos de contacto */
+}
+
+#mapa {
+  display: block;
+  margin: auto;
+}
+
+input {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+input:focus {
+  font-size: 10px;
+  border: 2px solid blue;
+  color: blue;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--ciudad {
+  background-color: #55acee;
+}
+
+.btn--direccion {
+  background-color: #3a5795;
+}
+
+.btn--telefono {
+  background-color: #C25E30;
+}
+
+.btn--ciudad {
+  background-color: #55acee;
+  text-align: center;
+}
+
+.btn--direccion {
+  background-color: #55acee;
+  text-align: center;
+}
+
+.btn--telefono {
+  background-color: #55acee;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
